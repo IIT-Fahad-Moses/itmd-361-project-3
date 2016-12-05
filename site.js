@@ -8,7 +8,7 @@ $.noConflict();
       event.preventDefault();
       var pcode = $('#pcode').val();
       // var clientKey = "js-9qZHzu2Flc59Eq5rx10JdKERovBlJp3TQ3ApyC4TOa3tA8U7aVRnFwf41RpLgtE7";
-      var api = 'http://api.zippopotam.us/US/' + pcode;
+      var api = 'https://api.zippopotam.us/US/' + pcode;
       $.get(api).done(function(input, json) {
         if (input != null) {
           var city = input.places[0]['place name'];
@@ -20,7 +20,7 @@ $.noConflict();
             center: latLng,
             zoom: 20,
           };
-          var weaURL = 'http://api.wunderground.com/api/545fdc789bb2fa90/conditions/q/' + state + '/' + city + '.json';
+          var weaURL = 'https://api.wunderground.com/api/545fdc789bb2fa90/conditions/q/' + state + '/' + city + '.json';
           $.get(weaURL, function(input, json) {
             if (input != null) {
               var temp = input.current_observation.temperature_string;
