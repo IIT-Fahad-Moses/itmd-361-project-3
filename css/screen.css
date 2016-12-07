@@ -68,7 +68,7 @@ header {
   text-align: left;
 }
 
-h1 {
+h1, h2 {
   font-size: 2.441em;
   /* 43.945px @ 18px em */
   line-height: 1.536em;
@@ -77,6 +77,10 @@ h1 {
   /* 22.5px @ 43.945px em */
   display: block;
   text-align: center;
+}
+
+h2 {
+  font-size:1.223em;
 }
 
 #page {
@@ -100,6 +104,7 @@ h1 {
 #location, #forecast {
   padding-bottom: 1em;
   padding-left: 1em;
+  padding-top: 1em;
   text-align: center;
 }
 
