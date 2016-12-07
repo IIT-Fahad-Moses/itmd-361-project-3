@@ -39,7 +39,7 @@ $.noConflict();
             position: latLng,
             map: map
           });
-        } 
+        }
       }).fail(function() {
         $('.error').text('Invalid zip code!');
         //$('#form').trigger("reset"); //tried to clear the error message
